@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url(./root.css);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text);
+
+    background-color: var(--background);
+
+}
+
+body>.contenuto {
+    background-color: var(--background);
+
+    /*Serve per mettere il contenuto in vari modi*/
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 32px 64px;
+    border-radius: 8px;
+    padding: 24px 0px;
+    box-shadow: 0px 8px 32px var(--primary);
+}
+
+/* L'asterisco serve per dire "tutti quelli dopo e oltre"*/
+body>.contenuto>* {
+    margin: 16px 32px;
+}
+
+/* L'hashtag serve per dire "prendi l'elemento con quell'id"*/
+body>.contenuto>#nome {
+    background-color: var(--primary);
+    color: var(--background);
+
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: fit-content;
+
+}
+
+.buttom {
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 400;
+}
+.buttom:hover{
+    background-color: var(--on-primary);
+}
+
+
